@@ -1,0 +1,119 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                                   Market Maker MT5|
+//|                                                 forexroboteasy.com|
+//|                                          Developed by Forex Robot Easy Team|
+//+------------------------------------------------------------------+
+
+// Include necessary libraries and defines
+
+// Define global variables
+
+//+------------------------------------------------------------------+
+//| Custom indicator initialization function                         |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+    // Perform initialization tasks
+
+    return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Custom indicator deinitialization function                       |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+    // Perform deinitialization tasks
+}
+
+//+------------------------------------------------------------------+
+//| Custom indicator calculation function                            |
+//+------------------------------------------------------------------+
+int OnCalculate(const int rates_total,
+                const int prev_calculated,
+                const datetime &time[],
+                const double &open[],
+                const double &high[],
+                const double &low[],
+                const double &close[],
+                const long &tick_volume[],
+                const long &volume[],
+                const int &spread[])
+{
+    // Calculate and process indicator values
+
+    return(rates_total);
+}
+
+//+------------------------------------------------------------------+
+//| Custom trading functions                                         |
+//+------------------------------------------------------------------+
+void OpenPosition()
+{
+    // Implement code to open a position based on trading rules
+}
+
+void ClosePosition()
+{
+    // Implement code to close an open position
+}
+
+//+------------------------------------------------------------------+
+//| Custom trading algorithm                                         |
+//+------------------------------------------------------------------+
+void TradingAlgorithm()
+{
+    // Implement the trading algorithm using the custom indicator
+
+    // Check for peak levels of trading activity
+
+    // Track correlation of candles on all timeframes
+
+    // Include volume levels representing key trading activity
+
+    // Identify demand and supply levels based on nearest volume levels
+
+    // Assign Demand and Supply statuses to volume levels
+
+    // Open and close positions based on trading rules
+
+    // Add necessary comments to explain the code logic
+}
+
+//+------------------------------------------------------------------+
+//| Custom EA initialization function                                |
+//+------------------------------------------------------------------+
+int OnInitExpert()
+{
+    // Perform initialization tasks for the EA
+    return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Custom EA deinitialization function                              |
+//+------------------------------------------------------------------+
+void OnDeinitExpert()
+{
+    // Perform deinitialization tasks for the EA
+}
+
+//+------------------------------------------------------------------+
+//| Custom EA tick processing function                               |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+    // Perform necessary tasks on each tick
+
+    // Call the trading algorithm function
+    TradingAlgorithm();
+}
+
+//+------------------------------------------------------------------+
+//| Custom EA start function                                         |
+//+------------------------------------------------------------------+
+void OnStart()
+{
+    // Call the trading algorithm function
+    TradingAlgorithm();
+}
